@@ -1,0 +1,264 @@
+.dark {
+  $darkColor:#0F1214;
+  $textColor:rgb(236, 230, 230);
+  // $titleColor:rgb(236, 230, 230);
+  $titleColor:#FEFEFE;
+  // $buttonColor:teal;
+  $logoColor:#6439ff;
+  $buttonColor:$logoColor;
+  $aroundColor:#262c30;
+  @mixin box-shadow($x: 2px, $y: 4px, $blur: 10px, $spread: 1px, $color: rgba(201, 201, 201, 0.47)) {
+    -webkit-box-shadow: $x $y $blur $spread $color;
+    -moz-box-shadow: $x $y $blur $spread $color;
+    box-shadow: $x $y $blur $spread $color;
+  }
+  background-color: $darkColor;
+  color: rgb(201, 197, 197);
+  // stroke: rgba(228, 228, 228, 0.219);
+  // background-color: #111;
+  // border-color: #333;
+  // color: white;
+  .structue {
+    background-color: $darkColor;
+    .structerContainer{
+      background-color: $darkColor;
+    }
+  }
+
+  .homeContainer{
+    background-color: $darkColor;
+    .widgets{
+      .widget{
+        @include box-shadow();
+        color: $textColor;
+      }
+      .title {
+        color: $titleColor;
+      }
+      .link {
+        border-bottom: 1px solid rgb(126, 122, 122);
+      }
+    }
+    .charts{
+      .featured{
+        @include box-shadow();
+        .title{
+          color: $titleColor;
+        }
+        .bottom {
+          color: $textColor;
+          .title {
+            color: $titleColor;
+          }
+          .amount{
+            color: $titleColor;
+          }
+          .desc {
+            color: $textColor;
+          }
+          .itemTitle {
+            color: $textColor;
+          }
+        }
+      }
+      .chart{
+        @include box-shadow();
+        background-color: $darkColor;
+        color: $titleColor;
+        .title {
+            color: $titleColor;
+          }
+        
+        .chartGrid {
+          
+          stroke: #9d9595;
+        }
+      }
+    }
+    .listContainer {
+      background-color: $darkColor;
+      @include box-shadow();
+      .listTitle {
+        color: $titleColor;
+      }
+      .table {
+        background-color: $darkColor;
+        .tableCell{
+          color: $textColor;
+        }
+        .left{
+          color: $textColor;
+        }
+        .status {
+          &.Approved {
+            color: rgb(12, 193, 12);
+            background-color: rgba(0, 128, 0, 0.418);
+          }
+          &.Pending {
+            color: rgb(231, 178, 46);
+            background-color: rgba(189, 189, 3, 0.265);
+          }
+        }
+      }
+    }
+  }
+  .listContainer{
+    .dataTableTitle {
+      a{
+        background-color: $buttonColor;
+      }
+    }
+  }
+
+  .newContainer {
+    background-color: $darkColor;
+    .top,
+    .bottom {
+      @include box-shadow();
+    }
+    h2 {
+      color: $titleColor;
+    }
+    label{
+      color: $textColor;
+    }
+    input{
+      background-color: #EEEEEE;
+      color: $darkColor;
+      border-radius: 5px;
+      font-size: 15px;
+    }
+  }
+
+  .sidebar{
+    background-color: $darkColor;
+    border-right: 0.5px solid $aroundColor;
+    hr {
+      border: 0.5px solid $textColor;
+    }
+    ul {
+      &::-webkit-scrollbar {
+        width: 5px;
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: $textColor;
+        width: 5px;
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        width: 5px;
+        background: #c5baf0;
+      }
+      
+      &::-webkit-scrollbar-thumb:hover {
+        // background: #555;
+        background: #2e12bb;
+      }
+      .title {
+        color: $titleColor;
+      }
+      span {
+        color: $textColor;
+      }
+      li:hover{
+        // background-color: #016CD6;
+        background-color: #2e12bb;
+      }
+    }
+
+  }  
+
+  .navbar {
+    background-color: $darkColor;
+    border-bottom: 1px solid $aroundColor;
+    color: $textColor;
+    #langSelectID {
+      background-color: $darkColor;
+      color: $textColor;
+      option {
+        width: 300px;
+        color: $textColor;
+      }
+      option:hover {
+        background-color: $logoColor;
+      }
+    }
+    .wrapper {  
+      .search {
+        border: 1px solid $textColor;
+        .searchIcon {
+          &:hover {
+            color: $logoColor;
+          }
+        }
+  
+        input {
+          color: $textColor;
+        }
+      }
+  
+      .items {  
+        .item {
+          .icon {
+            &:hover {
+              color: $logoColor;
+            }
+          }
+          .counter {
+            background-color: rgb(212, 54, 54);
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  .singleContainer {
+    background-color: $darkColor;
+    .top {
+        .left {
+          @include box-shadow();
+          .title {
+            color: $titleColor;
+          }
+          .editButton {
+            color: #5931eb;
+            background-color: #7551f861;
+          }
+
+
+          .item {
+            .details {
+              .ittlemName {
+                color: $textColor;
+              }
+              .detailitem {
+                color: $textColor;
+                .itemKey {
+                  color: $textColor;
+                }
+            }
+          }
+        }
+      }
+      .right {
+        .title{
+          color: $titleColor;
+        }
+        @include box-shadow();
+      }
+      
+    }
+    .bottom {
+      height: 100%;
+      @include box-shadow();
+      h3 {
+        color: $titleColor;
+      }
+    }
+  }
+  .MuiDataGrid-row--borderBottom .css-yseucu-MuiDataGrid-columnHeaderRow{
+    background-color: $darkColor;
+  }
+}

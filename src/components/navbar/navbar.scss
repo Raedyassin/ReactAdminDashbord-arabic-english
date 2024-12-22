@@ -1,0 +1,104 @@
+.navbar{
+  position: fixed;
+  inset-inline-start: 190px;
+  inset-block-start: 0;
+  height: 61px;
+  width: calc(100% - 190px);
+  background-color: white;
+  z-index: 100;
+  border-bottom: 1px solid rgb(230, 227, 277);
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #555;
+  #langSelectID{
+    stroke: none;
+    cursor: pointer;
+  &:focus{
+      border: none;
+      outline: none;
+    }
+    outline: none;
+    border: none;
+    padding: 5px;
+    // option{
+    //   width: 300px;
+    // }
+  }
+  .wrapper{
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .search{
+      display: flex;
+      align-items: center;
+      border: 1px solid lightgray;
+      padding: 3px;
+      .searchIcon{
+        cursor: pointer;
+        &:hover{
+          color: black;
+        }
+      }
+      input{
+        border: none;
+        outline: none;
+        background-color: transparent;
+        &::placeholder{
+          font-size: 12px;
+        }
+      }
+    }
+    
+    .items{
+      display: flex;
+      align-items: center;
+      
+      .item{
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-inline-end: 20px;
+        .icon{
+          font-style: 20px;
+          cursor: pointer;
+          &:hover{
+            color: black;
+          }
+        }
+
+        .counter{
+          background-color:  red;
+          color: white;
+          font-weight: bold;
+          width: 17px;
+          height: 17px;
+          font-size: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          position: absolute;
+          right: -5px;
+          top: -5px;
+          // z-index: 10;
+          // position: fixed;
+          // margin-left: 10px;
+          // margin-bottom: 15px;
+        }
+        .avatar{
+          display: block;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          border: 1px solid #555;
+        }
+      }
+      .potoImage {
+        margin: 0px;
+      }
+    }
+  }
+}

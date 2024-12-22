@@ -1,0 +1,95 @@
+{
+  "translation":{
+    "sidebar":{
+      "logo":"Dashboard",
+      "center":{
+        "main":"MAIN",
+        "list":"LISTS",
+        "users":"Users",
+        "products":"Products",
+        "orders":"Orders",
+        "delivery":"Delivery",
+        "useful":"USEFUL",
+        "stats":"Stats",
+        "notifications":"Notifications",
+        "service":"SERVICE",
+        "SystemHealth":"System Health",
+        "logs":"Logs",
+        "setting":"Settings",
+        "user":"USER",
+        "profile":"Profile",
+        "logout":"Logout"
+      }
+    },
+    "navbar":{
+      "search":"Search",
+      "english":"English",
+      "arabic":"Arabic"
+    },
+    "home":{
+      "title":"Latest Transactions",
+      "widget":{
+        "user":"USERS",
+        "user-link":"See all users",
+        "orders":"ORDERS",
+        "orders-link":"View all orders",
+        "earning":"EARNING",
+        "earning-link":"View net earnings",
+        "balance":"BALANCE",
+        "balance-link":"See details"
+      },
+      "feature":{
+        "totalRev":"Total Revenu",
+        "totalSales":"Total sales made today",
+        "desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit",
+        "lw":"Last Week",
+        "target":"Target",
+        "lm":"Last Month"
+      },
+      "chart":{
+        "title":"Revenue (Last 6 Months)"
+      }
+
+    },
+    "database":{
+      "addButton":"Add New",
+      "deteteButton":"Delete",
+      "viewButton":"View"
+    },
+    "app":{
+      "userTitle":"Add New User",
+      "productTitle":"Add New Product"
+    },
+    "new":{
+      "chooseImage":"Choose image",
+      "send":"Send"
+    },
+    "fromSourceUser":{
+      "userName":"Username",
+      "NAS":"Name and surname",
+      "email":"Email",
+      "phone":"Phone",
+      "pass":"Password",
+      "address":"Address",
+      "country":"Country"
+    } ,
+    "fromSourceProducts":{
+      "title":"Title",
+      "desc":"Description",
+      "cate":"Category",
+      "price":"Price",
+      "stock":"Stock"
+    },
+    "single":{
+      "information":"Information",
+      "edit":"Edit",
+      "email":"Email",
+      "phone":"Phone",
+      "address":"Address",
+      "country":"Country",
+      "chartTitle":"User Spending (Last 6 Months)",
+      "lastTrans":"Last Transactions"
+    }
+
+  }
+}
