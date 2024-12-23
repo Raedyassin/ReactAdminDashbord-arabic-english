@@ -16,7 +16,7 @@ The main objective of this project was to learn and practice building user inter
 
 ## 🚀 What I Learned
 
-- Setting up a responsive and user-friendly **dashboard layout**.
+- Setting up a user-friendly **dashboard layout**.
 - Managing **dark mode** functionality.
 - Using **i18next** to handle multi-language translations efficiently.
 - Applying **SASS** to organize and maintain clean, scalable styles.
